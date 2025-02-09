@@ -12,11 +12,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
+import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.Scaffold
@@ -25,8 +23,6 @@ import androidx.compose.material.TextButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.rememberScaffoldState
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
@@ -40,8 +36,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
-
-
 
 
 @Composable
@@ -67,7 +61,7 @@ fun DashboardScreen(navController: NavController, averageEmission: Double = 0.0)
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text("HI USER", Modifier.padding(top = 20.dp) ,fontSize = 35.sp, fontWeight = FontWeight.Bold)
+            Text("Greetings", Modifier.padding(top = 20.dp) ,fontSize = 35.sp, fontWeight = FontWeight.Bold)
 
             Spacer(modifier = Modifier.height(20.dp))
 
@@ -174,9 +168,7 @@ fun DrawerContent(onCloseDrawer: () -> Unit, navController: NavController) {
         })
 
         DrawerItem(title = "Achievements", onClick = {
-            navController.navigate("SurveyScreen") {
-                popUpTo("SurveyScreen") { inclusive = true }
-            }
+
             onCloseDrawer()
         })
 

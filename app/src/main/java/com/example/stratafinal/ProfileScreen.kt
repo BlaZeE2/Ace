@@ -63,7 +63,7 @@ fun ProfileScreen(googleSignInViewModel: GoogleSignInViewModel) {
             contentScale = ContentScale.FillWidth
         )
         IconButton(
-            onClick = { }, modifier = Modifier
+            onClick = {}, modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(top = 32.dp, start = 8.dp)
         ) {
