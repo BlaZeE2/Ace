@@ -138,7 +138,7 @@ fun SolutionScreen(navController: NavController, averageEmission: Double) {
                         color = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
                     )
-                    Text(text = " - Reduce meat consumption (especially red meat)", style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)
+                    Text(text = " - Reduce food waste by planning meals and composting organic waste", style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)
                     Text(text = " - Use public transport, cycle, or walk when possible", style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)
                     Text(text = " - Recycle and reduce waste", style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)
                     Text(text = " - Conserve energy at home", style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)

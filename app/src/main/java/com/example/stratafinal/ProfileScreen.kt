@@ -62,18 +62,7 @@ fun ProfileScreen(googleSignInViewModel: GoogleSignInViewModel) {
             contentDescription = "App bar background",
             contentScale = ContentScale.FillWidth
         )
-        IconButton(
-            onClick = {}, modifier = Modifier
-                .align(Alignment.TopStart)
-                .padding(top = 32.dp, start = 8.dp)
-        ) {
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                tint = Color.White,
-                contentDescription = "Arrow Back",
-                modifier = Modifier.size(35.dp)
-            )
-        }
+
         Text(
             modifier = Modifier
                 .align(Alignment.TopCenter)
@@ -168,43 +157,10 @@ fun ProfileScreen(googleSignInViewModel: GoogleSignInViewModel) {
                         isLast = true
                     )
                 }
-                Button(
-                    onClick = {
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(45.dp)
-                        .padding(horizontal = 16.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White
-                    ),
-                    shape = RoundedCornerShape(8.dp),
-                    border = BorderStroke(
-                        width = 1.5.dp,
-                        brush = Brush.linearGradient(
-                            colors = listOf(
-                                Color(0xFFF953C6),
-                                Color(0xFFB91D73)
-                            ),
-                            start = Offset.Zero,
-                            end = Offset.Infinite
-                        ),
-                    ),
-                    contentPadding = PaddingValues(0.dp),
-                ) {
-                    Text(
-                        text = "Log out",
-                        textAlign = TextAlign.Center,
-                        style = TextStyle(
-                            fontSize = 17.sp,
-                            fontWeight = FontWeight(600),
-                            color = Color(0xFFB91D73),
-                        ),
-                    )
                 }
             }
         }
-    }
+
 }
 
 @Composable
