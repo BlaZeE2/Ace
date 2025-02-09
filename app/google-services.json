@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036305062769",
+    "project_id": "stratafinal",
+    "storage_bucket": "stratafinal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036305062769:android:12daaf70dac9b8b877b4d0",
+        "android_client_info": {
+          "package_name": "com.example.stratafinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfQgZu_oEKv802Z8x2WOiTZI8WuHhwITY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
